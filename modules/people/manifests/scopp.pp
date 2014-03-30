@@ -19,5 +19,11 @@ class people::scopp {
   # Add ~/.ssh/config
   # Add ~/.ssh/knownhosts
   # Add ~/bin/gw
+  # Add Incognito.app
+  # Add Adium Preferences
+  # Add JMeter
+  # Add ANT
+  # Add samurai
+  # Add VisualVM
 
 }

@@ -69,16 +69,13 @@ alias pweb3='ssh -l scopp webcms-web03.cdp.webapps.rr.com'
 alias pweb4='ssh -l scopp webcms-web04.cdp.webapps.rr.com'
 
 # User specific variables
-export PS1='[\t] \[\033[01;31m\]\u@\h \[\033[01;32m\]\w\[\033[00m\] $ '
+#export PS1='[\t] \[\033[01;31m\]\u@\h \[\033[01;32m\]\w\[\033[00m\] $ '
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk/Contents/Home
-#export GRADLE_HOME=/opt/gradle
-export GROOVY_HOME=/opt/groovy
-export ANT_HOME=/cygdrive/c/apache-ant-1.8.2
+export ANT_HOME=/opt/ant
 export ANT_OPTS='-Xmx1024m -XX:MaxPermSize=256m'
 export JMETER_HOME=/opt/jmeter
-export BREW_HOME=/opt/brew
 
-export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH:$HOME/bin:/sbin:/usr/sbin:$SCRIPTS:$JMETER_HOME/bin:$SELENIUM_HOME:$ORACLE_HOME:$VNC_HOME:$GRADLE_HOME/bin:$BREW_HOME/bin:$GROOVY_HOME/bin:/opt/bin:$HOME/workspace/scripts
+export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$JAVA_HOME/bin:$ANT_HOME/bin:$JMETER_HOME/bin:$HOME/workspace/scripts
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -113,7 +110,4 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-#export PATH=$PATH:/Library/Java/JavaVirtualMachines/jdk/Contents/Home/bin:/cygdrive/c/apache-ant-1.8.2/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/scopp/bin:/sbin:/usr/sbin::/opt/jmeter/bin::::/bin:/opt/brew/bin:/opt/groovy/bin:/opt/bin
-
- [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

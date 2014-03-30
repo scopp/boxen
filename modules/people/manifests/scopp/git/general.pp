@@ -10,4 +10,14 @@ class people::scopp::git::general {
 
   validate_absolute_path($srcdir)
 
+  repository { "${_srcdir}/process-jmeter-results" :
+    source => 'https://github.com/scopp/process-jmeter-results.git',
+    path   => "${_srcdir}/process-jmeter-results",
+  }
+  ->
+  git::config::local { "${srcdir}/process-jmeter-results":
+    key   => 'user.email',
+    value => 'info@stephencopp.com',
+  }
+
 }
