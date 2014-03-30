@@ -4,8 +4,8 @@ classes:
 
 ruby::global::version: '1.9.3'
 
-intellij::edition: 'ultimate'
-intellij::version: '12.1.6'   # still requires a Java 6 runtime :-(
+intellij::edition: 'community'
+intellij::version: '13.1.1'   # still requires a Java 6 runtime :-(
 
 # "Sublime" is not in the name and alphabetized to make it easier to track
 sublime_text_2::packages:

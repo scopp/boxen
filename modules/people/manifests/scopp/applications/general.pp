@@ -16,6 +16,7 @@ class people::scopp::applications::general {
   #include 'omnigraffle::pro'
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
+  include 'packages::tree'
   include 'skitch'
   include 'skype'
   include 'sourcetree'

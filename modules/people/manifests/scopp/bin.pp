@@ -5,8 +5,8 @@
 class people::scopp::bin {
 
   # Gradle Wrapper finder script
-  file { '/usr/bin/gw':
-    source  => 'puppet:///modules/people/scopp/bin/gw',
+  file { '/usr/bin/gradle':
+    source  => 'puppet:///modules/people/scopp/bin/gradle',
     mode    => '0755',
   }
 

@@ -1,6 +1,6 @@
 # == Description
 #
-# Installs Java 7
+# Installs Java 6
 #
 # == Parameters
 #
@@ -10,27 +10,27 @@
 # [*update*]
 #   The update version (e.g., 'u45') to install. *Ignored* if 'source' is provided.
 #
-class packages::java7 (
+class packages::java6 (
   $source = undef,
-  $update = 'u45',
+  $update = 'u65',
 ) {
 
   if $source {
     $url = $source
   }
   else {
-    $url = "http://relic.lab.webapps.rr.com/artifactory/files-local/oracle/java/7${update}-macosx/java-7${update}-macosx-x64.dmg"
+    $url = "http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2013-05.dmg"
   }
 
-  package { "java7${update}":
+  package { "java6${update}":
     ensure   => 'installed',
     source   => $url,
     provider => 'pkgdmg',
   }
 
-  file { '/Library/Java/JavaVirtualMachines/jdk':
+  file { '/Library/Java/JavaVirtualMachines/jdk1.6.0':
     ensure  => 'link',
-    target  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk',
+    target  => '/System/Library/Java/JavaVirtualMachines/1.6.0.jdk',
   }
 
 }

@@ -8,6 +8,7 @@
 class projects::omega {
 
   include 'packages::java7'
+  include 'packages::java6'
   include 'projects::omega::repositories'
 
   # vagrant::box { 'Omega AEM 5.6 Base 20140107':
