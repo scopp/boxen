@@ -56,3 +56,53 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "augeas",         "~> 1.3"
+github "sourcetree",     "~> 1.0"
+github "cyberduck",      "~> 1.0"
+github "skitch",         "~> 1.0"
+github "spotify",        "~> 1.0"
+github "handbrake",      "~> 1.0"
+github "googledrive",    "~> 1.0"
+github "steam",          "~> 1.0"
+github "tmux",           "~> 1.0"
+github "swig",           "~> 1.0"
+github "pcre",           "~> 1.0"
+github "launchbar",      "~> 1.0"
+github "dropbox",        "~> 1.2"
+github "cloudapp",       "~> 1.0"
+github "zsh",            "~> 1.0"
+github "imagemagick",    "~> 1.2"
+github "skydrive",       "~> 1.0"
+github "skype",          "~> 1.0"
+github "wget",           "~> 1.0"
+github "graphviz",       "~> 1.0"
+github "omnigraffle",    "~> 1.3"
+github "heroku",         "~> 2.1"
+github "crashplan",      "~> 1.0"
+github "caffeine",       "~> 1.0"
+github "kindle",         "~> 1.0"
+
+# Waiting for "boxen/puppet-calibre" to support parameters
+github "calibre",        "~> 3.1"
+
+# sources/recipes for Omega-required
+github "chrome",          "~> 1.1"
+github "firefox",         "~> 1.1"
+
+github "iterm2",          "~> 1.0"
+github "sublime_text_2",  "~> 1.1"
+github "intellij",        "~> 1.4"
+
+github "virtualbox",      "~> 1.0"
+github "vagrant",         "~> 3.0"
+github "p4merge",         "~> 0.0", :repo => "steinim/puppet-p4merge"
+github "docker",          "~> 1.0", :repo => "morgante/puppet-docker"
+
+# sources/recipes desired
+github "osx",             "~> 2.2"
+github "keepassx",        "~> 1.0"
+github "adium",           "~> 1.3"
+github "evernote",        "~> 2.0"
+
+github "vlc",             "~> 1.0"
