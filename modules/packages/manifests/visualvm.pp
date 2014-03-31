@@ -19,7 +19,7 @@ class packages::visualvm (
     $url = $source
   }
   else {
-    $url = "https://java.net/projects/visualvm/downloads/download/release137/VisualVM_${version}.dmg"
+    $url = "https://java.net/projects/visualvm/downloads/download/release${version}/VisualVM_${version}.dmg"
   }
 
   package { "visualvm_${version}":
