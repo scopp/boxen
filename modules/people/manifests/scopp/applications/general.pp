@@ -20,6 +20,7 @@ class people::scopp::applications::general {
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
   include 'packages::tree'
+  include 'packages::visualvm'
   include 'skitch'
   include 'skype'
   include 'sourcetree'
