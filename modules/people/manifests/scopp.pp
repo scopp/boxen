@@ -11,6 +11,7 @@ class people::scopp {
   include people::scopp::git
   include people::scopp::sublime_text_2
   include people::scopp::osx
+  include people::scopp::symlinks
 
   ##########
   # TODO
