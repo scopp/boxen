@@ -22,5 +22,4 @@ class people::scopp {
   # Add desktop icon sizes
   # Add Evernote
   # Add BetterSnapTool
-  # Add process-jmeter-results
 }

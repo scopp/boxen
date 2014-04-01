@@ -10,9 +10,9 @@ class people::scopp::git::general {
 
   validate_absolute_path($srcdir)
 
-  repository { "${_srcdir}/process-jmeter-results" :
+  repository { "${srcdir}/process-jmeter-results" :
     source => 'https://github.com/scopp/process-jmeter-results.git',
-    path   => "${_srcdir}/process-jmeter-results",
+    path   => "${srcdir}/process-jmeter-results",
   }
   ->
   git::config::local { "${srcdir}/process-jmeter-results":
