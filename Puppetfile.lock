@@ -56,7 +56,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-evernote
   specs:
-    evernote (2.0.5)
+    evernote (2.0.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-firefox
@@ -74,14 +74,9 @@ GITHUBTARBALL
     gcc (2.0.100)
 
 GITHUBTARBALL
-  remote: boxen/puppet-gimp
-  specs:
-    gimp (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.2.2)
+    git (2.3.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -111,7 +106,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.6.1)
+    homebrew (1.9.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -131,7 +126,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.0.7)
+    iterm2 (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-keepassx
@@ -146,7 +146,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-launchbar
   specs:
-    launchbar (1.0.2)
+    launchbar (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -156,7 +156,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.6.0)
+    nodejs (3.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-omnigraffle
@@ -171,7 +171,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
-    osx (2.2.2)
+    osx (2.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pcre
@@ -181,7 +181,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
-    phantomjs (2.1.0)
+    phantomjs (2.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
@@ -196,7 +196,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (7.2.4)
+    ruby (7.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-skitch
@@ -251,17 +251,17 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.6)
+    vagrant (3.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
-    virtualbox (1.0.11)
+    virtualbox (1.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
   specs:
-    vlc (1.0.6)
+    vlc (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-wget
@@ -277,6 +277,11 @@ GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    puppet-property_list_key (0.2.1)
 
 GITHUBTARBALL
   remote: morgante/puppet-docker
@@ -304,7 +309,7 @@ GITHUBTARBALL
     p4merge (0.0.3)
 
 DEPENDENCIES
-  adium (~> 1.4.0)
+  adium (~> 1.3)
   augeas (~> 1.3)
   boxen (= 3.4.2)
   caffeine (~> 1.0)
@@ -317,37 +322,38 @@ DEPENDENCIES
   docker (~> 1.0)
   dropbox (~> 1.2)
   evernote (~> 2.0)
-  firefox (~> 1.2.1)
+  firefox (~> 1.1)
   foreman (= 1.2.0)
   gcc (= 2.0.100)
-  gimp (~> 1.0)
-  git (= 2.2.2)
+  git (= 2.3.1)
   go (= 1.1.0)
   googledrive (~> 1.0)
   graphviz (~> 1.0)
   handbrake (~> 1.0)
   heroku (~> 2.1)
-  homebrew (= 1.6.1)
+  homebrew (= 1.9.2)
   hub (= 1.3.0)
   imagemagick (~> 1.2)
   inifile (= 1.0.3)
-  intellij (~> 1.5.1)
+  intellij (~> 1.4)
   iterm2 (~> 1.0)
+  java (~> 1.5)
   keepassx (~> 1.0)
   kindle (~> 1.0)
-  launchbar (~> 1.0)
+  launchbar (~> 1.1)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
-  nodejs (= 3.6.0)
+  nodejs (= 3.7.0)
   omnigraffle (~> 1.3)
   openssl (= 1.0.0)
   osx (~> 2.2)
   p4merge (~> 0.0)
   pcre (~> 1.0)
-  phantomjs (= 2.1.0)
+  phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  puppet-property_list_key (~> 0.2)
   repository (= 2.3.0)
-  ruby (= 7.2.4)
+  ruby (= 7.3.0)
   skitch (~> 1.0)
   skydrive (~> 1.0)
   skype (~> 1.0)
@@ -360,7 +366,7 @@ DEPENDENCIES
   swig (~> 1.0)
   tmux (~> 1.0)
   vagrant (~> 3.0)
-  virtualbox (~> 1.0.11)
+  virtualbox (~> 1.0)
   vlc (~> 1.0)
   wget (~> 1.0)
   xquartz (= 1.1.1)
