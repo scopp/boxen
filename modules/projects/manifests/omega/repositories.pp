@@ -26,4 +26,9 @@ class projects::omega::repositories(
     path   => "${_srcdir}/cq-gradle-plugins",
   }
 
+  repository { "${_srcdir}/tools" :
+    source => 'https://github.webapps.rr.com/scopp/tools.git',
+    path   => "${_srcdir}/tools",
+  }
+
 }

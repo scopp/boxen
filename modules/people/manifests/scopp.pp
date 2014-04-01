@@ -18,11 +18,9 @@ class people::scopp {
 
   # Add ~/.ssh/config
   # Add ~/.ssh/knownhosts
-  # Add JMeter
-  # Add ANT
   # Add samurai
   # Add desktop icon sizes
   # Add Evernote
   # Add BetterSnapTool
-
+  # Add process-jmeter-results
 }

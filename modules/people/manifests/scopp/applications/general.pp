@@ -21,6 +21,7 @@ class people::scopp::applications::general {
   include 'packages::jmeter'
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
+  # include 'packages::synergy' - does not work
   include 'packages::tree'
   include 'packages::visualvm'
   include 'skitch'

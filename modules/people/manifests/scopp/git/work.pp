@@ -23,4 +23,9 @@ class people::scopp::git::work {
     value => 'stephen.copp@twcable.com',
   }
 
+  git::config::local { "${srcdir}/tools":
+    key   => 'user.email',
+    value => 'stephen.copp@twcable.com',
+  }
+
 }
