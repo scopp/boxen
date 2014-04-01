@@ -38,7 +38,7 @@
     quotepath = false
     autocrlf = input
     safecrlf = warn
-    editor = subl -w
+    #editor = subl -w
 
 [alias]
     stat = status -s

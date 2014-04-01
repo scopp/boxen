@@ -10,7 +10,7 @@ class people::scopp::git::global {
     'push.default':  value  => 'simple';
     'core.autocrlf': value  => 'input';
     'core.safecrlf': value  => 'warn';
-    'core.editor':   value  => 'subl -w';
+    #'core.editor':   value  => 'subl -w';
   }
 
 }
