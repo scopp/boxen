@@ -16,6 +16,8 @@ fixtures:
       repo: "git://github.com/boxen/puppet-chrome"
     git:
       repo: "git://github.com/boxen/puppet-git"
+    gimp:
+      repo: "git://github.com/boxen/puppet-gimp"
     homebrew:
       repo: "git://github.com/boxen/puppet-homebrew"
     inifile:

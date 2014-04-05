@@ -11,6 +11,7 @@ class people::scopp::applications::general {
   include 'dropbox'
   include 'firefox'
   include 'git'
+  include 'gimp'
   include 'intellij'
   include 'iterm2::stable'
   include 'packages::adium_prefs'
@@ -33,6 +34,12 @@ class people::scopp::applications::general {
   include 'wget'
   include 'zsh'
 
+class gimp {
+  package { 'GNU Image Manipulation Program':
+    provider => 'appdmg',
+    source   => 'http://ftp.gimp.org/pub/gimp/v2.8/osx/gimp-2.8.10-dmg-1.dmg',
+  }
+}
   #include 'omnigraffle::pro'
   #include 'tmux'
   #include 'vagrant'
