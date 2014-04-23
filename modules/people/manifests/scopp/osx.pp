@@ -50,6 +50,6 @@ class people::scopp::osx {
   include osx::disable_app_quarantine # disable the downloaded app quarantine
   include osx::no_network_dsstores # disable creation of .DS_Store files on network shares
   include osx::software_update # download and install software updates
-  include osx::keyboard::capslock_to_control # remaps capslock to control on attached keyboards
+  #include osx::keyboard::capslock_to_control # remaps capslock to control on attached keyboards
 
 }
