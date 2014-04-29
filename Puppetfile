@@ -95,7 +95,7 @@ github "iterm2",          "~> 1.0"
 github "sublime_text_2",  "~> 1.1"
 github "intellij",        "~> 1.4"
 
-github "virtualbox",      "~> 1.0"
+github "virtualbox",      "~> 1.0.11"
 github "vagrant",         "~> 3.0"
 github "p4merge",         "~> 0.0", :repo => "steinim/puppet-p4merge"
 github "docker",          "~> 1.0", :repo => "morgante/puppet-docker"
