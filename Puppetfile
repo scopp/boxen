@@ -93,7 +93,7 @@ github "firefox",         "~> 1.1"
 
 github "iterm2",          "~> 1.0"
 github "sublime_text_2",  "~> 1.1"
-github "intellij",        "~> 1.4"
+github "intellij",        "~> 1.5.1"
 
 github "virtualbox",      "~> 1.0.11"
 github "vagrant",         "~> 3.0"
