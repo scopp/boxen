@@ -14,7 +14,7 @@ class people::scopp::git::work {
 
   git::config::local { "${srcdir}/omega":
     key     => 'user.email',
-    value   => 'stephen.copp.@twcable.com',
+    value   => 'stephen.copp@twcable.com',
     require => Class['projects::omega']
   }
 
