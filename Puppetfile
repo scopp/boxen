@@ -89,7 +89,7 @@ github "calibre",        "~> 3.1"
 
 # sources/recipes for Omega-required
 github "chrome",          "~> 1.1"
-github "firefox",         "~> 1.1"
+github "firefox",         "~> 1.2.0"
 
 github "iterm2",          "~> 1.0"
 github "sublime_text_2",  "~> 1.1"
