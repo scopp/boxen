@@ -103,7 +103,7 @@ github "docker",          "~> 1.0", :repo => "morgante/puppet-docker"
 # sources/recipes desired
 github "osx",             "~> 2.2"
 github "keepassx",        "~> 1.0"
-github "adium",           "~> 1.3"
+github "adium",           "~> 1.4.0"
 github "evernote",        "~> 2.0"
 
 github "vlc",             "~> 1.0"
