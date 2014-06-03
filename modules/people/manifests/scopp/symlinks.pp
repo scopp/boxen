@@ -9,6 +9,10 @@ $srcdir = "${home}"
 
 validate_absolute_path($srcdir)
 
+file { "${srcdir}/workspace/":
+    ensure => "directory",
+}
+
 file { "${srcdir}/Desktop/Dropbox":
   ensure  => 'link',
   target   => "${srcdir}/Dropbox",

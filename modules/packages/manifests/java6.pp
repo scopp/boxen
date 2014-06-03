@@ -19,7 +19,7 @@ class packages::java6 (
     $url = $source
   }
   else {
-    $url = "http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2013-05.dmg"
+    $url = "http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg"
   }
 
   package { "java6${update}":
