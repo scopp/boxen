@@ -1,6 +1,8 @@
 require boxen::environment
 require homebrew
 require gcc
+require git
+require dnsmasq
 
 Exec {
   group       => 'staff',
@@ -53,42 +55,4 @@ Homebrew::Formula <| |> -> Package <| |>
 
 if hiera_array('classes', undef) {
   hiera_include('classes')
-}
-
-node default {
-  # core modules, needed for most things
-  include dnsmasq
-  include git
-  include hub
-  include nginx
-
-  # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
-
-  # node versions
-  #include nodejs::v0_6
-  #include nodejs::v0_8
-  #include nodejs::v0_10
-
-  # default ruby versions
-  #ruby::version { '1.9.3': }
-  #ruby::version { '2.0.0': }
-  #ruby::version { '2.1.0': }
-  #ruby::version { '2.1.1': }
-
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
-  }
-
-  file { "${boxen::config::srcdir}/our-boxen":
-    ensure => link,
-    target => $boxen::config::repodir
-  }
 }
