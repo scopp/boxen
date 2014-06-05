@@ -1,0 +1,19 @@
+---
+#classes:
+#  - intellij
+# - iterm2::stable
+
+boxen::security::require_password: true
+boxen::security::screensaver_delay_sec: 5
+
+people::scopp::system_roles:
+  - workstation
+
+firefox::version: '30.0'
+
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 55
+
+# See https://github.com/boxen/puppet-intellij for docs
+intellij::edition: 'community'
+intellij::version: '13.1.3'

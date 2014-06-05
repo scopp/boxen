@@ -52,4 +52,33 @@ class people::scopp::osx {
   include osx::software_update # download and install software updates
   #include osx::keyboard::capslock_to_control # remaps capslock to control on attached keyboards
 
+  host {
+    # Tower
+    'tower': ip => '10.143.47.12';
+
+    # Betas
+    'beta01.twcable.com': ip => '71.74.49.57';
+    'beta02-residential.timewarnercable.com': ip => '71.74.49.58';
+
+    # Dispatchers
+    'webcms-web01-residential.timewarnercable.com': ip => '68.168.70.16';
+    'webcms-web02-residential.timewarnercable.com': ip => '68.168.70.144';
+    'webcms-web03-residential.timewarnercable.com': ip => '68.168.71.16';
+    'webcms-web04-residential.timewarnercable.com': ip => '68.168.71.144';
+    'webcms-web05-residential.timewarnercable.com': ip => '68.168.70.77';
+    'webcms-web06-residential.timewarnercable.com': ip => '68.168.70.207';
+    'webcms-web07-residential.timewarnercable.com': ip => '68.168.71.79';
+    'webcms-web08-residential.timewarnercable.com': ip => '68.168.71.207';
+
+    # publishers
+    'webcms-pub01-residential.timewarnercable.com': ip => '68.168.71.15';
+    'webcms-pub02-residential.timewarnercable.com': ip => '68.168.71.143';
+    'webcms-pub03-residential.timewarnercable.com': ip => '68.168.71.17';
+    'webcms-pub04-residential.timewarnercable.com': ip => '68.168.71.145';
+    'webcms-pub05-residential.timewarnercable.com': ip => '68.168.70.79';
+    'webcms-pub06-residential.timewarnercable.com': ip => '68.168.70.207';
+    'webcms-pub07-residential.timewarnercable.com': ip => '68.168.71.79';
+    'webcms-pub08-residential.timewarnercable.com': ip => '68.168.71.207';
+  }
+
 }

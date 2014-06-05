@@ -10,9 +10,9 @@ class people::scopp::applications::personal {
 
   # Leawo Tunes Cleaner (iTunes music metadata cleaner)
   # http://www.leawo.com/tunes-cleaner-mac/
-  package { 'Tunes Cleaner from Leawo':
-    source   => 'http://download.leawo.com/download.php?eefc9e10ebdc4a2333b42b2dbb8f27b6',
-    provider => 'pkgdmg',
-  }
+  #package { 'Tunes Cleaner from Leawo':
+   # source   => 'http://download.leawo.com/download.php?eefc9e10ebdc4a2333b42b2dbb8f27b6',
+   # provider => 'pkgdmg',
+  #}
 
 }
