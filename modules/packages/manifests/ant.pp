@@ -14,10 +14,10 @@ class packages::ant (
     $url = "http://archive.apache.org/dist/ant/binaries/apache-ant-$version-bin.tar.gz"
   }
 
-file { '/opt':
-      ensure  => directory,
-      mode    => 0777,
-}
+#file { '/opt':
+#     ensure  => directory,
+#      mode    => 0777,
+#}
 
 exec {
   "Retrieve $url":
