@@ -12,7 +12,7 @@ class people::scopp::applications::general {
   include 'firefox'
   include 'git'
   include 'packages::git_process'
-  include 'gimp'
+  #include 'gimp'
   include 'intellij'
   include 'iterm2::stable'
   #include 'p4merge' - URL not working, see pacakages::p4merge.pp
@@ -27,7 +27,7 @@ class people::scopp::applications::general {
   include 'packages::sourcetree_cli'
   include 'packages::sublime_text_2_cli'
   include 'packages::sublime_text_2_package_management'
-  # include 'packages::synergy' - does not work
+  include 'packages::synergy'
   include 'packages::tree'
   include 'packages::visualvm'
   include 'skitch'
@@ -35,6 +35,7 @@ class people::scopp::applications::general {
   include 'sourcetree'
   include 'spotify'
   include 'sublime_text_2'
+  #include 'synergy' - URL not working, see pacakages::synergy.pp
   include 'virtualbox'
   include 'wget'
   include 'zsh'

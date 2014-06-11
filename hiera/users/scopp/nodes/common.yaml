@@ -17,3 +17,5 @@ java::update_version: 55
 # See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: 'community'
 intellij::version: '13.1.3'
+
+packages::synergy::version: '1.5.0-r2278'
