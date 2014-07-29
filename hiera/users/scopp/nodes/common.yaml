@@ -9,13 +9,13 @@ boxen::security::screensaver_delay_sec: 5
 people::scopp::system_roles:
   - workstation
 
-firefox::version: '30.0'
+firefox::version: 31.0
 
 # See https://github.com/boxen/puppet-java for docs
 java::update_version: 55
 
 # See https://github.com/boxen/puppet-intellij for docs
-intellij::edition: 'community'
-intellij::version: '13.1.3'
+intellij::edition: community
+intellij::version: 13.1.4
 
-packages::synergy::version: '1.5.0-r2278'
+packages::synergy::version: 1.5.0-r2278

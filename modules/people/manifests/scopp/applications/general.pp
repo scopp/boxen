@@ -12,7 +12,7 @@ class people::scopp::applications::general {
   include 'firefox'
   include 'git'
   include 'packages::git_process'
-  #include 'gimp'
+  include 'gimp'
   include 'intellij'
   include 'iterm2::stable'
   #include 'p4merge' - URL not working, see pacakages::p4merge.pp
