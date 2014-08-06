@@ -39,6 +39,7 @@ class people::scopp::applications::general {
   include 'virtualbox'
   include 'wget'
   include 'zsh'
+  include 'vagrant'
 
 class gimp {
   package { 'GNU Image Manipulation Program':

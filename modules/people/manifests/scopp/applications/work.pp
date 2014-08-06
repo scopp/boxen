@@ -5,6 +5,6 @@
 #
 class people::scopp::applications::work {
 
-  # none yet...
+    include 'vagrant'
 
 }

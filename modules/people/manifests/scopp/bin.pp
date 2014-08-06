@@ -10,4 +10,10 @@ class people::scopp::bin {
     mode    => '0755',
   }
 
+  # Repo sync script
+  file { '/usr/bin/repo':
+    source  => 'puppet:///modules/people/scopp/bin/repo',
+    mode    => '0755',
+  }
+
 }
