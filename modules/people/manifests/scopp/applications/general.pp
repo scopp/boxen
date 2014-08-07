@@ -39,7 +39,6 @@ class people::scopp::applications::general {
   include 'virtualbox'
   include 'wget'
   include 'zsh'
-  include 'vagrant'
 
 class gimp {
   package { 'GNU Image Manipulation Program':
@@ -50,7 +49,6 @@ class gimp {
 
   #include 'omnigraffle::pro'
   #include 'tmux'
-  #include 'vagrant'
   #include 'p4merge'
   #include 'packages::gjslint'
   #include 'packages::jq'
