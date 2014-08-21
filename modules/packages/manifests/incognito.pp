@@ -4,9 +4,9 @@
 #
 class packages::incognito {
 
-exec { "tar xzf /Users/scopp/Dropbox/development/scripts/incognito.tgz":
+exec { "tar xzf /Users/scopp/Dropbox/development/scripts/incognito-canary.tgz":
     cwd       => "/Applications",
-    creates   => "/Applications/Incognito.app",
+    creates   => "/Applications/Incognito-canary.app",
 }
 
 }

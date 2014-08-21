@@ -6,5 +6,6 @@
 class people::scopp::applications::work {
 
     include 'vagrant'
+    include chrome::canary
 
 }
