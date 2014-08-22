@@ -7,5 +7,6 @@ class people::scopp::applications::work {
 
     include 'vagrant'
     include chrome::canary
+    include 'packages::incognito-canary'
 
 }
