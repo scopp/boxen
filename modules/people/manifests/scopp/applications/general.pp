@@ -22,6 +22,7 @@ class people::scopp::applications::general {
   include 'packages::incognito'
   include 'java'
   include 'packages::java6'
+  include 'packages::java7'
   include 'packages::jmeter'
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
