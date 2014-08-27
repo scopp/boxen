@@ -25,16 +25,20 @@ exec {
     command => "wget $url",
     creates => "/opt/apache-ant-$version-bin.tar.gz",
     timeout => 3600,
-    require   => [ Package["wget"] ];
+    require   => Package["wget"];
 }
 
-file { "/opt/apache-ant-$version-bin.tar.gz":
+file { 
+  "Mode 755 /opt/apache-ant-$version-bin.tar.gz":
+  path     => "/opt/apache-ant-$version-bin.tar.gz",
   mode  => '755',
+  require => Exec["Retrieve $url"];
 }
 
 exec { "tar xzf /opt/apache-ant-$version-bin.tar.gz":
   cwd       => "/opt",
-  creates   => "/opt/apache-ant-$version",
+  creates  => "/opt/apache-ant-$version",
+  require  => File["Mode 755 /opt/apache-ant-$version-bin.tar.gz"];
 }
 
 file { '/opt/ant':
