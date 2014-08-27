@@ -51,7 +51,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
-    dropbox (1.2.0)
+    dropbox (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-evernote
@@ -325,7 +325,7 @@ DEPENDENCIES
   cyberduck (~> 1.0)
   dnsmasq (= 1.0.1)
   docker (~> 1.0)
-  dropbox (~> 1.2)
+  dropbox (~> 1.4)
   evernote (~> 2.0)
   firefox (~> 1.2.1)
   foreman (= 1.2.0)
