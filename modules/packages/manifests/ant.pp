@@ -25,6 +25,7 @@ exec {
     command => "wget $url",
     creates => "/opt/apache-ant-$version-bin.tar.gz",
     timeout => 3600,
+    require   => [ Package["wget"] ];
 }
 
 file { "/opt/apache-ant-$version-bin.tar.gz":
