@@ -69,6 +69,8 @@ class people::scopp::osx {
     'webcms-web06-residential.timewarnercable.com': ip => '68.168.70.207';
     'webcms-web07-residential.timewarnercable.com': ip => '68.168.71.79';
     'webcms-web08-residential.timewarnercable.com': ip => '68.168.71.207';
+    'webcms-web09-residential.timewarnercable.com': ip => '68.168.70.31';
+    'webcms-web10-residential.timewarnercable.com': ip => '68.168.71.31';
 
     # publishers
     'webcms-pub01-residential.timewarnercable.com': ip => '68.168.71.15';
@@ -79,6 +81,8 @@ class people::scopp::osx {
     'webcms-pub06-residential.timewarnercable.com': ip => '68.168.70.207';
     'webcms-pub07-residential.timewarnercable.com': ip => '68.168.71.79';
     'webcms-pub08-residential.timewarnercable.com': ip => '68.168.71.207';
+    'webcms-pub09-residential.timewarnercable.com': ip => '68.168.70.235';
+    'webcms-pub10-residential.timewarnercable.com': ip => '68.168.71.235';
   }
 
 }
