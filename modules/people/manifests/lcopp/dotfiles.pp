@@ -21,17 +21,8 @@ class people::lcopp::dotfiles {
     source => 'puppet:///modules/people/lcopp/zshrc',
   }
 
-  file { "${home}/.zshenv":
-    content => template('people/lcopp/zshenv.erb')
-  }
-
   file { "${home}/.zprofile":
     source => 'puppet:///modules/people/lcopp/zprofile',
-  }
-
-  file { "${home}/.gitconfig":
-    # This should probably be managed using the git module instead...
-    source => 'puppet:///modules/people/lcopp/gitconfig',
   }
 
   file { "${home}/.profile":
