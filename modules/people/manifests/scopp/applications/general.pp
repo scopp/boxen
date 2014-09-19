@@ -7,10 +7,10 @@ class people::scopp::applications::general {
 
   include 'adium'
   include 'chrome'
-  include 'docker'
   include 'dropbox'
   include 'firefox'
   include 'git'
+  include 'java'
   include 'packages::git_process'
   include 'gimp'
   include 'intellij'
@@ -20,9 +20,6 @@ class people::scopp::applications::general {
   include 'packages::adium_prefs'
   include 'packages::ant'
   include 'packages::incognito'
-  include 'java'
-  include 'packages::java6'
-  include 'packages::java7'
   include 'packages::jmeter'
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
@@ -53,6 +50,7 @@ class gimp {
   #include 'p4merge'
   #include 'packages::gjslint'
   #include 'packages::jq'
+  #include 'imagemagick'
 
   # vagrant::plugin { 'vagrant-vmware-fusion':
   #   license => 'puppet:///modules/people/joe/licenses/fusion.lic',

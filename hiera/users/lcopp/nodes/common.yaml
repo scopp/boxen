@@ -1,0 +1,8 @@
+---
+boxen::security::require_password: true
+boxen::security::screensaver_delay_sec: 5
+
+people::lcopp::system_roles:
+  - workstation
+
+firefox::version: 31.0

@@ -2,7 +2,7 @@
 #
 # Adds good symlinks
 #
-class people::scopp::symlinks {
+class people::lcopp::symlinks {
 
 $home = "/Users/${::boxen_user}"
 $srcdir = "${home}"
@@ -21,16 +21,6 @@ file { "${srcdir}/Desktop/Dropbox":
 file { "${srcdir}/Desktop/Downloads":
   ensure  => 'link',
   target   => "${srcdir}/Downloads",
-}
-
-file { "${srcdir}/workspace/scripts":
-  ensure  => 'link',
-  target   => "${srcdir}/Dropbox/development/scripts",
-}
-
-file { '/Library/Java/JavaVirtualMachines/jdk':
-ensure  => 'link',
-target  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk',
 }
 
 }
