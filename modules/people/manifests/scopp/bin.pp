@@ -1,19 +1,26 @@
 # == Description
 #
-# Scripts and similiar for Stephen Copp (aka "scopp").
+# Applications specific for Stephen Copp (aka "scopp").
 #
-class people::scopp::bin {
+# == Parameters
+#
+# [*system_roles*]
+#   An array of the roles that this system participates in.
+#   Valid values are 'work' and 'personal'. If not passed in,
+#   it is looked up in hiera using the key 'people::scopp::system_roles'
+#
+class people::scopp::bin (
+  $system_roles = undef
+) {
 
-  # Gradle Wrapper finder script
-  file { '/usr/bin/gradle':
-    source  => 'puppet:///modules/people/scopp/bin/gradle',
-    mode    => '0755',
+  $_system_roles = hiera_array('people::scopp::system_roles', [])
+  $roles = $system_roles ? { undef => $_system_roles, default => $system_roles}
+
+  if member($roles, 'work') {
+    include people::scopp::bin::general
   }
-
-  # Repo sync script
-  file { '/usr/bin/repo':
-    source  => 'puppet:///modules/people/scopp/bin/repo',
-    mode    => '0755',
+  elsif member($roles, 'personal') {
+    include people::scopp::bin::general
   }
 
 }

@@ -1,36 +1,29 @@
 # == Description
 #
-# Adds good symlinks
+# symlinks specific for Stephen Copp (aka "scopp").
 #
-class people::scopp::symlinks {
+# == Parameters
+#
+# [*system_roles*]
+#   An array of the roles that this system participates in.
+#   Valid values are 'work' and 'personal'. If not passed in,
+#   it is looked up in hiera using the key 'people::scopp::system_roles'
+#
+class people::scopp::symlinks (
+  $system_roles = undef
+) {
 
-$home = "/Users/${::boxen_user}"
-$srcdir = "${home}"
+  $_system_roles = hiera_array('people::scopp::system_roles', [])
+  $roles = $system_roles ? { undef => $_system_roles, default => $system_roles}
 
-validate_absolute_path($srcdir)
-
-file { "${srcdir}/workspace/":
-    ensure => "directory",
-}
-
-file { "${srcdir}/Desktop/Dropbox":
-  ensure  => 'link',
-  target   => "${srcdir}/Dropbox",
-}
-
-file { "${srcdir}/Desktop/Downloads":
-  ensure  => 'link',
-  target   => "${srcdir}/Downloads",
-}
-
-file { "${srcdir}/workspace/scripts":
-  ensure  => 'link',
-  target   => "${srcdir}/Dropbox/development/scripts",
-}
-
-file { '/Library/Java/JavaVirtualMachines/jdk':
-ensure  => 'link',
-target  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk',
-}
+  if member($roles, 'work') {
+    include people::scopp::symlinks::general
+  }
+  elsif member($roles, 'personal') {
+    include people::scopp::symlinks::general
+  }
+  elsif member($roles, 'lauren') {
+    include people::scopp::symlinks::lauren
+  }
 
 }

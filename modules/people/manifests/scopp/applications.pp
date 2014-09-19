@@ -16,13 +16,16 @@ class people::scopp::applications (
   $_system_roles = hiera_array('people::scopp::system_roles', [])
   $roles = $system_roles ? { undef => $_system_roles, default => $system_roles}
 
-  include people::scopp::applications::general
-
   if member($roles, 'work') {
-    include 'people::scopp::applications::work'
+    include people::scopp::applications::general
+    include people::scopp::applications::work
   }
   elsif member($roles, 'personal') {
-    include 'people::scopp::applications::personal'
+    include people::scopp::applications::general
+    include people::scopp::applications::personal
+  }
+  elsif member($roles, 'lauren') {
+    include people::scopp::applications::lauren
   }
 
 }

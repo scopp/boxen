@@ -1,3 +1,13 @@
 ---
 people::scopp::system_roles:
   - work
+
+# See https://github.com/boxen/puppet-java for docs
+java::update_version: 55
+
+people::scopp::system_roles:
+  - workstation
+
+# See https://github.com/boxen/puppet-intellij for docs
+intellij::edition: community
+intellij::version: 13.1.4b

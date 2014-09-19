@@ -1,8 +1,4 @@
-# == Description
-#
-# Adds good symlinks
-#
-class people::lcopp::symlinks {
+class people::scopp::symlinks::lauren {
 
 $home = "/Users/${::boxen_user}"
 $srcdir = "${home}"

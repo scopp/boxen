@@ -19,13 +19,13 @@ class people::scopp::git (
   require people::scopp::dotfiles
 
   include git
-  include people::scopp::git::global
-  include people::scopp::git::general
 
   if member($roles, 'work') {
+    include people::scopp::git::general
     include people::scopp::git::work
   }
   elsif member($roles, 'personal') {
+    include people::scopp::git::general
     include people::scopp::git::personal
   }
   else {

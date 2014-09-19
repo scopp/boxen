@@ -1,15 +1,9 @@
-# == Description
-#
-# Applications specific for Lauren (aka "lcopp")
-# that should be on all his machines.
-#
-class people::lcopp::applications::general {
+class people::scopp::applications::lauren {
 
   include 'chrome'
   include 'dropbox'
   include 'firefox'
   include 'iterm2::stable'
-  include 'packages::incognito'
   include 'java'
   include 'packages::sublime_text_2_cli'
   include 'packages::sublime_text_2_package_management'
