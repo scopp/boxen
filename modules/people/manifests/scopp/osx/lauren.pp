@@ -14,7 +14,7 @@ class people::scopp::osx::lauren {
     user   => $::boxen_user,
   }
 
-  osx::recovery_message { 'If this Mac is found, please call 720-515-0010': }
+  osx::recovery_message { 'If this Mac is found, please call 720-336-0030': }
 
   #include osx::global::disable_key_press_and_hold # disable press-and-hold for accented character entry
   include osx::global::enable_keyboard_control_access # enables the keyboard for navigating controls in dialogs
