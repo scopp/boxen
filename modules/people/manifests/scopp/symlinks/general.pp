@@ -2,7 +2,7 @@
 #
 # Adds good symlinks
 #
-class people::scopp::symlinks:general {
+class people::scopp::symlinks::general {
 
 $home = "/Users/${::boxen_user}"
 $srcdir = "${home}"

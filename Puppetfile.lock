@@ -289,6 +289,11 @@ GITHUBTARBALL
     puppet-property_list_key (0.2.1)
 
 GITHUBTARBALL
+  remote: harperreed/puppet-google-app-engine
+  specs:
+    google-app-engine (1.0.0)
+
+GITHUBTARBALL
   remote: morgante/puppet-docker
   specs:
     docker (1.0.3)
@@ -333,6 +338,7 @@ DEPENDENCIES
   gimp (~> 1.0)
   git (= 2.3.1)
   go (= 1.1.0)
+  google-app-engine (~> 1.0)
   googledrive (~> 1.0)
   graphviz (~> 1.0)
   handbrake (~> 1.0)
