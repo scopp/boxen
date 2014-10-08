@@ -6,6 +6,7 @@
 class people::scopp::applications::general {
 
   include 'adium'
+  include 'atom'
   include 'chrome'
   include 'dropbox'
   include 'firefox'
@@ -62,5 +63,5 @@ class gimp {
   #     'groovy',
   #   ]:
   # }
-  
+
 }

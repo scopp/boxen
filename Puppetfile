@@ -65,6 +65,7 @@ github "puppet-property_list_key", "~> 0.2", :repo => "glarizza/puppet-property_
 ## Please keep sorted
 ##
 github "adium",          "~> 1.4.0"
+github "atom",          "~> 1.0", :repo => "tarebyte/puppet-atom"
 github "augeas",         "~> 1.3"
 github "caffeine",       "~> 1.0"
 github "calibre",        "~> 3.1"
