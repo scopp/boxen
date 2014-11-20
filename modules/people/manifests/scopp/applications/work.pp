@@ -7,6 +7,7 @@ class people::scopp::applications::work {
 
     include vagrant
     include 'docker'
+    include 'packer'
     include chrome::canary
     include 'packages::incognito-canary'
     include 'packages::vip'

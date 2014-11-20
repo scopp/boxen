@@ -49,6 +49,11 @@ GITHUBTARBALL
     dnsmasq (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-docker
+  specs:
+    docker (0.7.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
     dropbox (1.4.0)
@@ -284,6 +289,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: erik-stephens/puppet-packer
+  specs:
+    packer (1.4.0)
+
+GITHUBTARBALL
   remote: glarizza/puppet-property_list_key
   specs:
     puppet-property_list_key (0.2.1)
@@ -292,11 +302,6 @@ GITHUBTARBALL
   remote: harperreed/puppet-google-app-engine
   specs:
     google-app-engine (1.0.0)
-
-GITHUBTARBALL
-  remote: morgante/puppet-docker
-  specs:
-    docker (1.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -335,7 +340,7 @@ DEPENDENCIES
   crashplan (~> 1.0)
   cyberduck (~> 1.0)
   dnsmasq (= 1.0.1)
-  docker (~> 1.0)
+  docker (~> 0.7.0)
   dropbox (~> 1.4)
   evernote (~> 2.0)
   firefox (~> 1.2.1)
@@ -366,6 +371,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   osx (~> 2.2)
   p4merge (~> 0.0)
+  packer (~> 1.4.0)
   pcre (~> 1.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
