@@ -6,6 +6,6 @@
 boxen::security::require_password: true
 boxen::security::screensaver_delay_sec: 5
 
-firefox::version: 32.0.3
+firefox::version: 34.0.5
 
 packages::synergy::version: 1.5.0-r2278
