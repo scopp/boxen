@@ -4,7 +4,7 @@ people::scopp::system_roles:
   - workstation
 
 # See https://github.com/boxen/puppet-java for docs
-java::update_version: '55'
+#java::update_version: '55'
 
 packer::version: 0.7.2
 
