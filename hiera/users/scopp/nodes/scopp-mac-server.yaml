@@ -7,4 +7,4 @@ java::update_version: 55
 
 # See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: community
-intellij::version: 13.1.4b
+intellij::version: 14.0.2

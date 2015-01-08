@@ -5,6 +5,7 @@
 #
 class people::scopp::applications::work {
 
+    include groovy
     include vagrant
     include 'docker'
     include 'packer'

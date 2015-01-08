@@ -10,4 +10,4 @@ packer::version: 0.7.2
 
 # See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: community
-intellij::version: 13.1.4b
+intellij::version: 14.0.2
