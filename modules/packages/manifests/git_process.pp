@@ -13,10 +13,12 @@ class packages::git_process {
 
   validate_re($ruby::global::version, '^\S+')
 
-  ruby::gem { "git-process for ${ruby::global::version}":
-    gem     => 'git-process',
-    ruby    => $ruby::global::version,
-    version => '~> 2.0'
-  }
+  ruby_gem { "git-process for ${ruby::global::version}":
+  gem          => 'git-process',
+  version      => '~> 2.0',
+  ruby_version => "${ruby::global::version}",
+}
+
+
 
 }

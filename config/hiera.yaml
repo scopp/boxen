@@ -14,7 +14,7 @@
 # For example, on "jdigger"'s work MBP he has a "fact" defined
 #   as {::boxen_project_01 => 'developer'}
 # That means that the following files are merged:
-# 
+#
 # people/jdigger/nodes/Jims-MacBook-Pro-2.yaml  # hostname
 # people/jdigger/nodes/common.yaml
 # people/jdigger.yaml

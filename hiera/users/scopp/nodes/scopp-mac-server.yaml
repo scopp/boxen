@@ -3,7 +3,7 @@ people::scopp::system_roles:
   - personal
 
   # See https://github.com/boxen/puppet-java for docs
-java::update_version: 55
+java::update_version: '55'
 
 # See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: community
