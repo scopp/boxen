@@ -23,9 +23,10 @@ alias lt='ls -alhpt -G'
 alias pp='ps -ef | grep -i'
 
 alias rdesktop='/Applications/Remote\ Desktop\ Connection.app/Contents/MacOS/Remote\ Desktop\ Connection'
-alias gitm='git fetch -p ; git merge origin/master'
-alias gitr='git fetch -p ; git rebase origin/master'
-alias gitcop='git checkout _parking_'
+alias gitm='git fetch -p ; git merge origin/master ; git status -sb'
+alias gitr='git fetch -p ; git rebase origin/master ; git status -sb'
+alias gits='git status -sb'
+alias gitcop='git checkout _parking_; git status -sb'
 
 alias ci='ssh scopp@webcms-ci.webapps.rr.com'
 alias ci00='ssh scopp@webcms-ci00.lab.webapps.rr.com'
