@@ -21,21 +21,20 @@ class packages::synergy (
     $url = $source
   }
   else {
-    $url = "http://synergy-project.org/files/packages/synergy-$version-MacOSX109-x86_64.dmg"
+    $url = "http://synergy-project.org/files/packages/synergy-${version}-MacOSX109-x86_64.dmg"
   }
 
   package { 'synergy':
     ensure   => 'installed',
     source   => $url,
     provider => 'appdmg',
-    before => File['Mode 755 /Applications/Synergy.app'],
+    before   => File['Mode 0755 /Applications/Synergy.app'],
   }
 
-  file { "Mode 755 /Applications/Synergy.app":
-    path     => "/Applications/Synergy.app",
-    ensure => directory,
-    recurse => true,
-    mode   => '755',
+  file { 'Mode 0755 /Applications/Synergy.app':
+    ensure   => directory,
+    path     => '/Applications/Synergy.app',
+    recurse  => true,
+    mode     => '0755',
 }
-
 }
