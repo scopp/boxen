@@ -6,7 +6,7 @@
 boxen::security::require_password: true
 boxen::security::screensaver_delay_sec: 5
 
-firefox::version: 34.0.5
+firefox::version: 35.0.1
 
 packages::synergy::version: 1.6.2
 packages::synergy::source: '/Users/scopp/Dropbox/installs/synergy-1.6.2-master-ebba77f-MacOSX1010-x86_64.dmg'
