@@ -21,6 +21,7 @@ class people::scopp::applications::general {
   include 'packages::adium_prefs'
   include 'packages::ant'
   include 'packages::incognito'
+  include 'packages::jenv'
   include 'packages::jmeter'
   include 'packages::asciidoc'
   include 'packages::sourcetree_cli'
