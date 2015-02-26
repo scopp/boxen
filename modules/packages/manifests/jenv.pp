@@ -13,7 +13,7 @@ class packages::jenv {
 
   $home = "/Users/${::boxen_user}"
 
-  file { "${home}/.jenv/versions":
+  file { [ "${home}/.jenv", "${home}/.jenv/versions" ]:
     ensure => 'directory',
   }
 }
