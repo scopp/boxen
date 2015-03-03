@@ -7,6 +7,7 @@ people::scopp::system_roles:
 #java::update_version: '55'
 
 packer::version: 0.7.2
+vagrant::version: 1.7.2
 
 # See https://github.com/boxen/puppet-intellij for docs
 intellij::edition: community

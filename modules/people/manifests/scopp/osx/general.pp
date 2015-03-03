@@ -116,7 +116,7 @@ class people::scopp::osx::general {
   #include osx::global::key_repeat_delay
   # ... or set your own
   class { 'osx::global::key_repeat_delay':
-    delay => 10
+    delay => 35
   }
 
   # Set the default value (0) - the amount of time (in ms) before key repeat 'presses'
