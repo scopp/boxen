@@ -13,8 +13,13 @@ class people::scopp::dotfiles::general {
   $home = "/Users/${::boxen_user}"
 
   repository { 'oh-my-zsh' :
-    source => 'https://github.com/scopp/oh-my-zsh.git',
+    source => 'https://github.com/robbyrussell/oh-my-zsh.git',
     path   => "${home}/.oh-my-zsh",
+  }
+
+  file { "${home}/.oh-my-zsh/themes/scopp.zsh-theme":
+    source  => 'puppet:///modules/people/scopp/scopp.zsh-theme',
+    require => Repository['oh-my-zsh'],
   }
 
   file { "${home}/.zshrc":
