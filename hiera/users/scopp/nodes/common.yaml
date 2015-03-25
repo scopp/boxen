@@ -10,3 +10,16 @@ firefox::version: 36.0.4
 
 packages::synergy::version: 1.6.2
 packages::synergy::source: '/Users/scopp/Dropbox/installs/synergy-1.6.2-master-ebba77f-MacOSX1010-x86_64.dmg'
+
+  # See https://github.com/boxen/puppet-java for docs
+#java::update_version: '55'
+
+# See https://github.com/boxen/puppet-intellij for docs
+intellij::edition: community
+intellij::version: 14.0.2
+
+packer::version: 0.7.2
+vagrant::version: 1.7.2
+
+virtualbox::version: 4.3.26
+virtualbox::patch_level: 98988

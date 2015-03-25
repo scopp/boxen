@@ -23,6 +23,7 @@ class people::scopp::git (
   if member($roles, 'work') {
     include people::scopp::git::general
     include people::scopp::git::work
+    include people::scopp::git::twc
   }
   elsif member($roles, 'personal') {
     include people::scopp::git::general

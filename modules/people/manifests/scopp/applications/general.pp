@@ -5,40 +5,35 @@
 #
 class people::scopp::applications::general {
 
-  include 'adium'
-  include 'atom'
-  include 'chrome'
-  include 'dropbox'
-  include 'firefox'
-  include 'git'
-  include 'java'
-  include 'packages::git_process'
-  include 'gimp'
-  include 'intellij'
-  include 'iterm2::stable'
+  include atom
+  include chrome
+  include dropbox
+  include firefox
+  include git
+  include java
+  include gimp
+  include intellij
+  include iterm2::stable
   #include 'p4merge' - URL not working, see pacakages::p4merge.pp
-  include 'packages::p4merge'
-  include 'packages::adium_prefs'
-  include 'packages::ant'
-  include 'packages::incognito'
-  include 'packages::jenv'
-  include 'packages::jmeter'
-  include 'packages::asciidoc'
-  include 'packages::sourcetree_cli'
-  include 'packages::sublime_text_2_cli'
-  include 'packages::sublime_text_2_package_management'
-  include 'packages::synergy'
-  include 'packages::tree'
-  include 'packages::visualvm'
-  include 'skitch'
-  include 'skype'
-  include 'sourcetree'
-  include 'spotify'
-  include 'sublime_text_2'
+  include skype
+  include sourcetree
+  include spotify
   #include 'synergy' - URL not working, see pacakages::synergy.pp
-  include 'virtualbox'
-  include 'wget'
-  include 'zsh'
+  include virtualbox
+  include wget
+  include zsh
+
+  include packages::p4merge
+  include packages::ant
+  include packages::git_process
+  include packages::incognito
+  include packages::jenv
+  include packages::jmeter
+  include packages::asciidoc
+  include packages::sourcetree_cli
+  include packages::synergy
+  include packages::tree
+  include packages::visualvm
 
 class gimp {
   package { 'GNU Image Manipulation Program':
@@ -47,9 +42,7 @@ class gimp {
   }
 }
 
-  #include 'omnigraffle::pro'
   #include 'tmux'
-  #include 'p4merge'
   #include 'packages::gjslint'
   #include 'packages::jq'
   #include 'imagemagick'

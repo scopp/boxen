@@ -9,7 +9,6 @@ class people::scopp {
   include people::scopp::applications
   include people::scopp::ruby
   include people::scopp::git
-  include people::scopp::sublime_text_2
   include people::scopp::osx
   include people::scopp::symlinks
 

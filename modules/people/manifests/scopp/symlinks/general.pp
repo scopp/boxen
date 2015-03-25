@@ -28,9 +28,4 @@ file { "${srcdir}/workspace/scripts":
   target   => "${srcdir}/Dropbox/development/scripts",
 }
 
-file { '/Library/Java/JavaVirtualMachines/jdk':
-ensure  => 'link',
-target  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk',
-}
-
 }

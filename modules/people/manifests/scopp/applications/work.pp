@@ -5,13 +5,12 @@
 #
 class people::scopp::applications::work {
 
-    include groovy
-    include vagrant
-    include 'docker'
-    include 'packer'
     include chrome::canary
-    include 'packages::incognito-canary'
-    include 'packages::vip'
-    include 'packages::java6'
+    include groovy
+    include docker
+    include packer
+    include vagrant
+
+    include packages::incognito-canary
 
 }

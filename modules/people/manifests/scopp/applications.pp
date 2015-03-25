@@ -20,6 +20,10 @@ class people::scopp::applications (
     include people::scopp::applications::general
     include people::scopp::applications::work
   }
+  elsif member($roles, 'twc') {
+    include people::scopp::applications::general
+    include people::scopp::applications::twc
+  }
   elsif member($roles, 'personal') {
     include people::scopp::applications::general
     include people::scopp::applications::personal
