@@ -5,7 +5,7 @@
 #
 class people::scopp::git::work {
 
-  include 'projects::omega'
+  include 'projects::work'
 
   $home = "/Users/${::boxen_user}"
   $srcdir = "${home}/workspace"
