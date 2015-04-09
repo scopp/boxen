@@ -12,5 +12,6 @@ class people::scopp::applications::work {
     include vagrant
 
     include packages::incognito-canary
+    include packages::java6
 
 }

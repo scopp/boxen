@@ -17,7 +17,7 @@ export JMETER_HOME=/opt/jmeter
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_NDK_ROOT=/usr/local/opt/android-ndk
 
-export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$JAVA_HOME/bin:$ANT_HOME/bin:$JMETER_HOME/bin:$HOME/workspace/scripts
+export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/.jenv/bin:$ANT_HOME/bin:$JMETER_HOME/bin:$HOME/workspace/scripts
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -51,6 +51,8 @@ export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$JAVA_HOME/bin:$ANT_HOME/bin:$JMETER
 plugins=(git git-extras)
 
 source $ZSH/oh-my-zsh.sh
+
+eval "$(/opt/boxen/homebrew/bin/jenv init -)"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
