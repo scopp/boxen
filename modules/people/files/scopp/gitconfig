@@ -41,6 +41,9 @@
     #editor = subl -w
 
 [alias]
+    latest = !git pull && git submodule update --init --recursive
+    unstage = reset HEAD --
+    uncommit = reset --soft HEAD^
     stat = status -s
     ci = commit
     # br = branch -a
@@ -132,7 +135,7 @@
     # nr = "!sh -c 'git init $0'"
     # echoparam1 = "!sh -c 'echo $0'"
     #testshfunction = "!function gitme() { git init $1; cd $1; }; gitme"
-    
+
     # fixup = "!sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -"
     # squash = "!sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -"
     # ccfq = "!sh -c 'git add $1 && git commit -m\"Placeholder\"' -"
@@ -166,7 +169,7 @@
 
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+    path =
 
 [mergetool "sourcetree"]
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
