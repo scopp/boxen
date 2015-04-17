@@ -68,51 +68,9 @@ alias ll='ls -alhpG'
 alias lt='ls -alhpt -G'
 alias pp='ps -ef | grep -i'
 
-alias rdesktop='/Applications/Remote\ Desktop\ Connection.app/Contents/MacOS/Remote\ Desktop\ Connection'
 alias gitm='git fetch -p ; git merge origin/master ; git status -sb'
 alias gitr='git fetch -p ; git rebase origin/master ; git status -sb'
 alias gits='git status -sb'
-alias gitcop='git checkout _parking_; git status -sb'
 
-alias ci='ssh scopp@webcms-ci.webapps.rr.com'
-alias ci00='ssh scopp@webcms-ci00.lab.webapps.rr.com'
-alias ci-slave='ssh scopp@ci-slave01.lab.webapps.rr.com'
-alias tower='ssh scopp@10.143.47.12'
-alias alpha02='ssh scopp@webcms-alpha02.lab.webapps.rr.com'
-alias beta01='ssh scopp@webcms-beta01.lab.webapps.rr.com'
-alias beta02='ssh scopp@webcms-beta02.lab.webapps.rr.com'
-
-#alias engr2aut1='ssh scopp@68.168.70.21'
-#alias engr2aut2='ssh scopp@68.168.70.149'
-#alias engr2pub1='ssh scopp@68.168.71.21'
-#alias engr2pub2='ssh scopp@68.168.71.149'
-
-alias engr2aut1='ssh scopp@webcms-auth01.engr2.webapps.rr.com'
-alias engr2aut2='ssh scopp@webcms-auth02.engr2.webapps.rr.com'
-alias engr2pub1='ssh scopp@webcms-pub01.engr2.webapps.rr.com'
-alias engr2pub2='ssh scopp@webcms-pub02.engr2.webapps.rr.com'
-
-alias engr1aut1='ssh scopp@webcms-auth01.engr1.webapps.rr.com'
-alias engr1aut2='ssh scopp@webcms-auth02.engr1.webapps.rr.com'
-alias engr1pub1='ssh scopp@webcms-pub01.engr1.webapps.rr.com'
-alias engr1pub2='ssh scopp@webcms-pub02.engr1.webapps.rr.com'
-
-alias engr2aut1host='webcms-auth01.engr2.webapps.rr.com'
-alias engr2aut2host='webcms-auth02.engr2.webapps.rr.com'
-alias engr2pub1host='webcms-pub01.engr2.webapps.rr.com'
-alias engr2pub2host='webcms-pub02.engr2.webapps.rr.com'
-
-alias paut1='ssh -l scopp webcms-auth01.cdp.webapps.rr.com'
-alias paut2='ssh -l scopp webcms-auth02.cdp.webapps.rr.com'
-
-alias ppub1='ssh -l scopp webcms-pub01.cdp.webapps.rr.com'
-alias ppub2='ssh -l scopp webcms-pub02.cdp.webapps.rr.com'
-alias ppub3='ssh -l scopp webcms-pub03.cdp.webapps.rr.com'
-alias ppub4='ssh -l scopp webcms-pub04.cdp.webapps.rr.com'
-
-alias pweb1='ssh -l scopp webcms-web01.cdp.webapps.rr.com'
-alias pweb2='ssh -l scopp webcms-web02.cdp.webapps.rr.com'
-alias pweb3='ssh -l scopp webcms-web03.cdp.webapps.rr.com'
-alias pweb4='ssh -l scopp webcms-web04.cdp.webapps.rr.com'
-
+alias setup-build='./configure.py ; ./tools/build-scripts/build_plugin.sh'
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
