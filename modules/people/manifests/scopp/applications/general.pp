@@ -14,6 +14,7 @@ class people::scopp::applications::general {
   include gimp
   include intellij
   include iterm2::stable
+  include karabiner
   #include 'p4merge' - URL not working, see pacakages::p4merge.pp
   include skype
   include sourcetree
