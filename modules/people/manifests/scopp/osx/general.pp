@@ -115,16 +115,16 @@ class people::scopp::osx::general {
   # Set the default value (35) - the amount of time (in ms) before a key starts repeating
   #include osx::global::key_repeat_delay
   # ... or set your own
-  class { 'osx::global::key_repeat_delay':
-    delay => 35
-  }
+  #class { 'osx::global::key_repeat_delay':
+  #  delay => 35
+  #}
 
   # Set the default value (0) - the amount of time (in ms) before key repeat 'presses'
   #include osx::global::key_repeat_rate
   # ... or set your own
-  class { 'osx::global::key_repeat_rate':
-    rate => 1
-  }
+  #class { 'osx::global::key_repeat_rate':
+  #  rate => 1
+  #}
 
   # Set the default value (enabled=true) - enable/disable 'natural' mouse scrolling. Requires re-login for new settings to initialize.
   include osx::global::natural_mouse_scrolling
@@ -144,14 +144,14 @@ class people::scopp::osx::general {
   #include osx::dock::icon_size
   # ... or set your own
   class { 'osx::dock::icon_size':
-    size => 30
+    size => 40
   }
 
   # Set the default value ('right') - the location of the dock on the screen ('right', 'left', 'top', 'bottom')
   #include osx::dock::position
   # ... or set your own
   class { 'osx::dock::position':
-    position => 'left'
+    position => 'bottom'
   }
 
   # Set the default value ('start') - the location to pin the dock to ('start', 'middle', 'end')
@@ -219,34 +219,6 @@ class people::scopp::osx::general {
   host {
     # Tower
     'tower': ip => '10.143.47.12';
-
-    # Betas
-    'beta01.twcable.com': ip => '71.74.49.57';
-    'beta02-residential.timewarnercable.com': ip => '71.74.49.58';
-
-    # Dispatchers
-    'webcms-web01-residential.timewarnercable.com': ip => '68.168.70.16';
-    'webcms-web02-residential.timewarnercable.com': ip => '68.168.70.144';
-    'webcms-web03-residential.timewarnercable.com': ip => '68.168.71.16';
-    'webcms-web04-residential.timewarnercable.com': ip => '68.168.71.144';
-    'webcms-web05-residential.timewarnercable.com': ip => '68.168.70.77';
-    'webcms-web06-residential.timewarnercable.com': ip => '68.168.70.207';
-    'webcms-web07-residential.timewarnercable.com': ip => '68.168.71.79';
-    'webcms-web08-residential.timewarnercable.com': ip => '68.168.71.207';
-    'webcms-web09-residential.timewarnercable.com': ip => '68.168.70.31';
-    'webcms-web10-residential.timewarnercable.com': ip => '68.168.71.31';
-
-    # publishers
-    'webcms-pub01-residential.timewarnercable.com': ip => '68.168.71.15';
-    'webcms-pub02-residential.timewarnercable.com': ip => '68.168.71.143';
-    'webcms-pub03-residential.timewarnercable.com': ip => '68.168.71.17';
-    'webcms-pub04-residential.timewarnercable.com': ip => '68.168.71.145';
-    'webcms-pub05-residential.timewarnercable.com': ip => '68.168.70.79';
-    'webcms-pub06-residential.timewarnercable.com': ip => '68.168.70.207';
-    'webcms-pub07-residential.timewarnercable.com': ip => '68.168.71.79';
-    'webcms-pub08-residential.timewarnercable.com': ip => '68.168.71.207';
-    'webcms-pub09-residential.timewarnercable.com': ip => '68.168.70.235';
-    'webcms-pub10-residential.timewarnercable.com': ip => '68.168.71.235';
   }
 
 }
