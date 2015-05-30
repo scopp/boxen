@@ -123,7 +123,7 @@ class people::scopp::osx::general {
   #include osx::global::key_repeat_rate
   # ... or set your own
   class { 'osx::global::key_repeat_rate':
-    rate => .05
+    rate => '.05'
   }
 
   # Set the default value (enabled=true) - enable/disable 'natural' mouse scrolling. Requires re-login for new settings to initialize.
