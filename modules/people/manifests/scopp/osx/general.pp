@@ -115,16 +115,16 @@ class people::scopp::osx::general {
   # Set the default value (35) - the amount of time (in ms) before a key starts repeating
   #include osx::global::key_repeat_delay
   # ... or set your own
-  #class { 'osx::global::key_repeat_delay':
-  #  delay => 35
-  #}
+  class { 'osx::global::key_repeat_delay':
+    delay => 35
+  }
 
   # Set the default value (0) - the amount of time (in ms) before key repeat 'presses'
   #include osx::global::key_repeat_rate
   # ... or set your own
-  #class { 'osx::global::key_repeat_rate':
-  #  rate => 1
-  #}
+  class { 'osx::global::key_repeat_rate':
+    rate => .05
+  }
 
   # Set the default value (enabled=true) - enable/disable 'natural' mouse scrolling. Requires re-login for new settings to initialize.
   include osx::global::natural_mouse_scrolling
