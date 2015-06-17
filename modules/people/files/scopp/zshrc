@@ -71,6 +71,7 @@ alias pp='ps -ef | grep -i'
 alias gitm='git fetch -p ; git merge origin/master ; git status -sb'
 alias gitr='git fetch -p ; git rebase origin/master ; git status -sb'
 alias gits='git status -sb'
+alias gitd='git diff'
 
 alias build-setup='./configure.py ; ./tools/build-scripts/build_plugin.sh'
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
