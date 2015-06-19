@@ -72,6 +72,14 @@ alias gitm='git fetch -p ; git merge origin/master ; git status -sb'
 alias gitr='git fetch -p ; git rebase origin/master ; git status -sb'
 alias gits='git status -sb'
 alias gitd='git diff'
+alias gitb='git branch'
+
+alias buildsonar='ssh build@192.168.7.60'
+alias build662='ssh build@192.168.7.148'
+alias build667='ssh build@192.168.2.135'
+alias build668='ssh build@192.168.5.249'
+alias build669='ssh build@192.168.2.254'
+alias build670='ssh build@192.168.3.252'
 
 alias build-setup='./configure.py ; ./tools/build-scripts/build_plugin.sh'
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
