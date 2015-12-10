@@ -10,7 +10,7 @@
 # See https://github.com/boxen/puppet-ruby for docs
 classes:
   - ruby::global
-ruby::global::version: "1.9.3"
+ruby::global::version: "2.2.3"
 ruby::rbenv_plugins:
   rbenv-vars:
     ensure: v1.2.0
