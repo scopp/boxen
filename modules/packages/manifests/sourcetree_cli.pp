@@ -6,7 +6,7 @@ class packages::sourcetree_cli {
 
   include sourcetree
 
-  file { '/usr/bin/stree':
+  file { '/opt/bin/stree':
     ensure  => 'link',
     target  => '/Applications/SourceTree.app/Contents/Resources/stree',
     require => Class['sourcetree']

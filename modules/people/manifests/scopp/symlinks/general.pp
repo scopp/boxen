@@ -13,6 +13,10 @@ file { "${srcdir}/workspace/":
     ensure => "directory",
 }
 
+file { "/opt/bin":
+    ensure => "directory",
+}
+
 file { "${srcdir}/Desktop/Dropbox":
   ensure  => 'link',
   target   => "${srcdir}/Dropbox",
