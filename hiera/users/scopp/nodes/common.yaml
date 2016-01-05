@@ -21,5 +21,5 @@ intellij::version: 14.0.2
 packer::version: 0.7.2
 vagrant::version: 1.7.2
 
-virtualbox::version: 4.3.26
-virtualbox::patch_level: 98988
+virtualbox::version: 5.0.10
+virtualbox::patch_level: 104061
