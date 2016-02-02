@@ -5,6 +5,8 @@
 #
 class people::scopp::applications::personal {
 
+    include vagrant
+
   # Leawo Tunes Cleaner (iTunes music metadata cleaner)
   # http://www.leawo.com/tunes-cleaner-mac/
   #package { 'Tunes Cleaner from Leawo':
