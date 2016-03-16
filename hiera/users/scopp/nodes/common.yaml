@@ -8,8 +8,8 @@ boxen::security::screensaver_delay_sec: 5
 
 firefox::version: 37.0.1
 
-packages::synergy::version: 1.7.5
-packages::synergy::source: '/Users/scopp/Dropbox/installs/synergy-v1.7.5-stable-fa85a24-MacOSX1010-x86_64.dmg'
+packages::synergy::version: 1.7.6
+packages::synergy::source: '/Users/scopp/Dropbox/installs/synergy-v1.7.6-stable-51705f7-MacOSX1011-x86_64.dmg'
 
   # See https://github.com/boxen/puppet-java for docs
 #java::update_version: '55'
