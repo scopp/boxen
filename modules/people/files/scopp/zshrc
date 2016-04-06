@@ -18,7 +18,7 @@ export SCAN_BUILD=/opt/scan-build
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export ANDROID_NDK_ROOT=/usr/local/opt/android-ndk
 
-export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/.jenv/bin:$ANT_HOME/bin:$JMETER_HOME/bin:$HOME/workspace/scripts:$SCAN_BUILD
+export PATH=$PATH:$HOME/bin:/sbin:/usr/sbin:$HOME/.jenv/bin:$ANT_HOME/bin:$JMETER_HOME/bin:$HOME/workspace/scripts:$SCAN_BUILD:/opt/phabricator/arcanist/bin
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
