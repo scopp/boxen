@@ -16,6 +16,7 @@ class people::scopp::applications::general {
   include iterm2::stable
   include karabiner
   #include 'p4merge' - URL not working, see pacakages::p4merge.pp
+  include silver_searcher
   include skype
   include sourcetree
   include spotify
