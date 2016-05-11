@@ -10,7 +10,6 @@ class people::scopp::applications::work {
     include docker
     include packer
     include vagrant
-    include pycharm
 
     include packages::incognito-canary
     include packages::java6
