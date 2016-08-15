@@ -88,6 +88,8 @@ alias build1065='ssh build@192.168.6.77'
 alias build1066='ssh build@192.168.6.75'
 alias buildvm001='ssh build@192.168.6.26'
 
+alias smoketest-od="/Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -logfile -projectPath /Users/scopp/workspace/overdrive-one/unity/OverDrive -executeMethod Anki.TestScenario.RunTest"
+
 alias build-setup='./tools/build-scripts/clean.sh ; ./configure.py ; ./tools/build-scripts/build_plugin.sh'
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 

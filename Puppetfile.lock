@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.1)
+    hub (1.4.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-imagemagick
@@ -377,7 +377,7 @@ DEPENDENCIES
   handbrake (~> 1.0)
   heroku (~> 2.1)
   homebrew (= 2.0.2)
-  hub (= 1.4.1)
+  hub (= 1.4.3)
   imagemagick (~> 1.2)
   inifile (= 1.4.1)
   intellij (~> 1.5.1)
