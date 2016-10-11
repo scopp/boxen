@@ -53,7 +53,7 @@ plugins=(git git-extras)
 
 source $ZSH/oh-my-zsh.sh
 
-eval "$(/opt/boxen/homebrew/bin/jenv init -)"
+eval "$(/usr/local/bin/jenv init -)"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

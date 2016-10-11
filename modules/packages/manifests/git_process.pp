@@ -15,7 +15,7 @@ class packages::git_process {
 
   ruby_gem { "git-process for ${ruby::global::version}":
   gem          => 'git-process',
-  version      => '~> 2.0',
+  version      => '~> 3.0.1',
   ruby_version => "${ruby::global::version}",
 }
 
