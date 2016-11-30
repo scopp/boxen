@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (2.0.1)
+    dnsmasq (2.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-docker
@@ -116,7 +116,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (2.0.2)
+    homebrew (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -354,7 +354,7 @@ DEPENDENCIES
   cloudapp (~> 1.0)
   crashplan (~> 1.0)
   cyberduck (~> 1.0)
-  dnsmasq (= 2.0.1)
+  dnsmasq (= 2.0.2)
   docker (~> 0.7.0)
   dropbox (~> 1.4.1)
   evernote (~> 2.0)
@@ -370,7 +370,7 @@ DEPENDENCIES
   groovy (~> 1.0)
   handbrake (~> 1.0)
   heroku (~> 2.1)
-  homebrew (= 2.0.2)
+  homebrew (= 2.1.0)
   hub (= 1.4.3)
   imagemagick (~> 1.2)
   inifile (= 1.4.1)
